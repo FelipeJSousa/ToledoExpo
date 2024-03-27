@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ToledoExpo.Services.Core\ToledoExpo.Services.Core.csproj" />
+      <ProjectReference Include="..\ToledoExpo.Services.Domain\ToledoExpo.Services.Domain.csproj" />
+      <ProjectReference Include="..\ToledoExpo.Services.Infraestructure\ToledoExpo.Services.Infraestructure.csproj" />
+    </ItemGroup>
+
+</Project>
