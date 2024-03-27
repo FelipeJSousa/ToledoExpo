@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ToledoExpo.Services.Core\ToledoExpo.Services.Core.csproj" />
+      <ProjectReference Include="..\ToledoExpo.Services.Domain\ToledoExpo.Services.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

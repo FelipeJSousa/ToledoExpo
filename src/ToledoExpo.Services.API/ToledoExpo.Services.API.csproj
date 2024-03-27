@@ -11,4 +11,9 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ToledoExpo.Services.Application\ToledoExpo.Services.Application.csproj" />
+      <ProjectReference Include="..\ToledoExpo.Services.Core\ToledoExpo.Services.Core.csproj" />
+    </ItemGroup>
+
 </Project>
