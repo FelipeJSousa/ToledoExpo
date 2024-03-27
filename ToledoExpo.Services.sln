@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToledoExpo.Services.Core", "src\ToledoExpo.Services.Core\ToledoExpo.Services.Core.csproj", "{D6BAE608-FD15-4BE6-A815-46B071E97C95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToledoExpo.Services.API", "src\ToledoExpo.Services.API\ToledoExpo.Services.API.csproj", "{9979CC75-51B2-4FB9-9E42-AB28479412FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToledoExpo.Services.Infraestructure", "src\ToledoExpo.Services.Infraestructure\ToledoExpo.Services.Infraestructure.csproj", "{8CD911FF-69F1-4C98-83B0-D517F3074919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToledoExpo.Services.Domain", "src\ToledoExpo.Services.Domain\ToledoExpo.Services.Domain.csproj", "{B24E931C-9D65-41E6-9FF2-7175FC2393BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6BAE608-FD15-4BE6-A815-46B071E97C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6BAE608-FD15-4BE6-A815-46B071E97C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6BAE608-FD15-4BE6-A815-46B071E97C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6BAE608-FD15-4BE6-A815-46B071E97C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9979CC75-51B2-4FB9-9E42-AB28479412FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9979CC75-51B2-4FB9-9E42-AB28479412FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9979CC75-51B2-4FB9-9E42-AB28479412FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9979CC75-51B2-4FB9-9E42-AB28479412FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD911FF-69F1-4C98-83B0-D517F3074919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD911FF-69F1-4C98-83B0-D517F3074919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD911FF-69F1-4C98-83B0-D517F3074919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD911FF-69F1-4C98-83B0-D517F3074919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B24E931C-9D65-41E6-9FF2-7175FC2393BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B24E931C-9D65-41E6-9FF2-7175FC2393BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B24E931C-9D65-41E6-9FF2-7175FC2393BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B24E931C-9D65-41E6-9FF2-7175FC2393BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
