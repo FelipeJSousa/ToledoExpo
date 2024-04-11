@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToledoExpo.Services.Domain"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToledoExpo.Services.Application", "src\ToledoExpo.Services.Application\ToledoExpo.Services.Application.csproj", "{52610A3A-ACF9-446E-B195-B365059677FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToledoExpo.Services.UnitTestDomain", "tests\ToledoExpo.Services.UnitTestDomain\ToledoExpo.Services.UnitTestDomain.csproj", "{D6310B84-91C7-4864-B652-8DD3477E4D9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{52610A3A-ACF9-446E-B195-B365059677FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52610A3A-ACF9-446E-B195-B365059677FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52610A3A-ACF9-446E-B195-B365059677FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6310B84-91C7-4864-B652-8DD3477E4D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6310B84-91C7-4864-B652-8DD3477E4D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6310B84-91C7-4864-B652-8DD3477E4D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6310B84-91C7-4864-B652-8DD3477E4D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
