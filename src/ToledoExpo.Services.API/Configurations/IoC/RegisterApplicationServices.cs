@@ -3,9 +3,9 @@ using ToledoExpo.Services.Domain.Interfaces.Services;
 
 namespace ToledoExpo.Services.API.Configurations.IoC;
 
-public static class RegisterServices
+public static class RegisterApplicationServices
 {
-    public static IServiceCollection Register(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection RegisterServices(this IServiceCollection services)
     {
         services.AddScoped<IAtendenteService, AtendenteService>();
         
