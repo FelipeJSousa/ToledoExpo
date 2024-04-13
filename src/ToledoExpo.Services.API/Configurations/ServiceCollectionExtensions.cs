@@ -2,9 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using ToledoExpo.Services.API.Configurations.IoC;
-using ToledoExpo.Services.Domain.Interfaces;
 using ToledoExpo.Services.Infraestructure.Data.Contexts;
-using ToledoExpo.Services.Infraestructure.Data.Repositories;
 
 namespace ToledoExpo.Services.API.Configurations;
 

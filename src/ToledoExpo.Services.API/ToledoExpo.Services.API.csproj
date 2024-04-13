@@ -17,7 +17,6 @@
     <ItemGroup>
       <ProjectReference Include="..\ToledoExpo.Services.Application\ToledoExpo.Services.Application.csproj" />
       <ProjectReference Include="..\ToledoExpo.Services.Core\ToledoExpo.Services.Core.csproj" />
-      <ProjectReference Include="..\ToledoExpo.Services.Infraestructure\ToledoExpo.Services.Infraestructure.csproj" />
     </ItemGroup>
 
 </Project>
