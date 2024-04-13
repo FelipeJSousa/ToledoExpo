@@ -22,7 +22,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\src\ToledoExpo.Services.Domain\ToledoExpo.Services.Domain.csproj" />
-      <ProjectReference Include="..\src\ToledoExpo.Services.Domain\ToledoExpo.Services.Domain.csproj" />
     </ItemGroup>
 
 </Project>
