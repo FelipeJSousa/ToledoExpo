@@ -4,7 +4,7 @@ namespace ToledoExpo.Services.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class AtendenteController : Controller
+public class AtendenteController : ApiBaseController
 {
     public AtendenteController()
     {
