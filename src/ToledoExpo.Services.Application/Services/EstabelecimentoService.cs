@@ -6,9 +6,9 @@ using ToledoExpo.Services.Domain.Interfaces.Services;
 
 namespace ToledoExpo.Services.Application.Services;
 
-public class AtendenteService : ServiceBase<Atendente>, IAtendenteService
+public class EstabelecimentoService : ServiceBase<Estabelecimento>, IEstabelecimentoService
 {
-    public AtendenteService(IServiceProvider serviceProvider, IRepository<Atendente> repoBase) : base(serviceProvider, repoBase)
+    public EstabelecimentoService(IServiceProvider serviceProvider, IRepository<Estabelecimento> repoBase) : base(serviceProvider, repoBase)
     {
     }
 }

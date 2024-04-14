@@ -12,6 +12,7 @@ public static class RegisterApplicationServices
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
         services.AddScoped<IAtendenteService, AtendenteService>();
+        services.AddScoped<IEstabelecimentoService, EstabelecimentoService>();
 
         return services;
     }

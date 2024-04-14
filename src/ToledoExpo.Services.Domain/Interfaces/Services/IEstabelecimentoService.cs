@@ -3,7 +3,7 @@ using ToledoExpo.Services.Domain.Entities;
 
 namespace ToledoExpo.Services.Domain.Interfaces.Services;
 
-public interface IAtendenteService : IService<Atendente>
+public interface IEstabelecimentoService : IService<Estabelecimento>
 {
     
 }
