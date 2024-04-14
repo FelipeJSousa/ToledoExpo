@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using ToledoExpo.Services.Core.Interfaces;
 using ToledoExpo.Services.Core.Interfaces.Services;
 using ToledoExpo.Services.Core.ValueObjects;
 

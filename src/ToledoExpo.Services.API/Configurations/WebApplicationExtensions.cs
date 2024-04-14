@@ -1,8 +1,3 @@
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-
 namespace ToledoExpo.Services.API.Configurations;
 
 public static class WebApplicationExtensions

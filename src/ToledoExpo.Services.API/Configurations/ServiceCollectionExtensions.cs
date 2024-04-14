@@ -1,5 +1,3 @@
-
-
 using Microsoft.EntityFrameworkCore;
 using ToledoExpo.Services.API.Configurations.IoC;
 using ToledoExpo.Services.Infraestructure.Data.Contexts;

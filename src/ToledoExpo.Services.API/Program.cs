@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Builder;
 using ToledoExpo.Services.API.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);

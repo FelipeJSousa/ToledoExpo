@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ToledoExpo.Services.Core.Entities;
-using ToledoExpo.Services.Domain.Entities;
 
 namespace ToledoExpo.Services.Infraestructure.Data.Map;
 

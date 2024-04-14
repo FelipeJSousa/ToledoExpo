@@ -18,9 +18,4 @@ public class Cliente : Entity
         VelocidadeMovimento = velocidadeMovimento;
         CapacidadeCognitiva = capacidadeCognitiva;
     }
-
-    public void RemoverSaldo(double saldoRemovido)
-    {
-        throw new NotImplementedException();
-    }
 }

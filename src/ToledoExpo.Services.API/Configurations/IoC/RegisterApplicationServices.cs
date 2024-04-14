@@ -1,5 +1,5 @@
 using ToledoExpo.Services.Application.Services;
-using ToledoExpo.Services.Domain.Interfaces;
+using ToledoExpo.Services.Core.Interfaces.Repositories;
 using ToledoExpo.Services.Domain.Interfaces.Services;
 using ToledoExpo.Services.Infraestructure.Data.Repositories;
 

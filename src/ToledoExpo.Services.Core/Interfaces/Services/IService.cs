@@ -1,4 +1,3 @@
-using System;
 using ToledoExpo.Services.Core.Entities;
 
 namespace ToledoExpo.Services.Core.Interfaces.Services;
