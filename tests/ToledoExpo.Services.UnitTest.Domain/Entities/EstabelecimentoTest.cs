@@ -1,6 +1,7 @@
+using System;
 using ToledoExpo.Services.Domain.Entities;
 
-namespace ToledoExpo.Services.UnitTestDomain;
+namespace ToledoExpo.Services.UnitTestDomain.Entities;
 
 public class EstabelecimentoTest
 {
