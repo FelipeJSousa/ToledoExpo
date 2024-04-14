@@ -1,8 +1,8 @@
 
 
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
 using ToledoExpo.Services.API.Configurations.IoC;
+using ToledoExpo.Services.Infraestructure.Data.Contexts;
 
 namespace ToledoExpo.Services.API.Configurations;
 
@@ -24,11 +24,11 @@ public static class ServiceCollectionExtensions
         
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
-        
-        // services.AddDbContext<ToledoExpoContext>(options =>
-        // {
-        //     options.UseMySql(configuration.GetConnectionString("DefaultConnection"));
-        // });
+
+        services.AddDbContext<ToledoExpoContext>(options =>
+        {
+            options.UseMySQL(configuration.GetConnectionString("DefaultConnection"));
+        });
 
         services.RegisterServices();
         

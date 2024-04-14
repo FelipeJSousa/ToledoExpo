@@ -14,4 +14,13 @@ public class Atendimento : Entity
     public DateTime DataInicioAtendimento { get; set; }
     
     public DateTime DataFimAtendimento { get; set; }
+
+
+    #region Navigation Properties
+
+    public Cliente ClienteObj { get; set; }
+
+    public Atendente AtendenteObj { get; set; }
+    
+    #endregion
 }
