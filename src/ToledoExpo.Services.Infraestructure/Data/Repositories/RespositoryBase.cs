@@ -1,6 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
+using ToledoExpo.Services.Core.Entities;
+using ToledoExpo.Services.Core.Interfaces.Repositories;
 using ToledoExpo.Services.Domain.Entities;
 using ToledoExpo.Services.Domain.Interfaces;
 

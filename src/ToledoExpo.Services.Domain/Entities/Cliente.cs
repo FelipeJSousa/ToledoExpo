@@ -1,3 +1,5 @@
+using ToledoExpo.Services.Core.Entities;
+
 namespace ToledoExpo.Services.Domain.Entities;
 
 public class Cliente : Entity

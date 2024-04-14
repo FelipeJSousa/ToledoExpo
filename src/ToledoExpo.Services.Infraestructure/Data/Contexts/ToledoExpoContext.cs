@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ToledoExpo.Services.Core.Entities;
 using ToledoExpo.Services.Domain.Entities;
 
 namespace ToledoExpo.Services.Infraestructure.Data.Contexts;
