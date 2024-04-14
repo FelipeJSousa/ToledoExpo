@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ToledoCW.Services.Model;
+using ToledoExpo.Services.API.ViewModels;
 
 namespace ToledoExpo.Services.API.Controllers;
 

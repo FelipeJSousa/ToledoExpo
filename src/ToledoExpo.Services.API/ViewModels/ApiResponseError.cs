@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
 
-namespace ToledoCW.Services.Model;
+namespace ToledoExpo.Services.API.ViewModels;
 
 [DataContract(Name = "responseError", Namespace = "")]
 [XmlRoot(ElementName = "responseError", Namespace = "")]
