@@ -26,4 +26,12 @@ public class Estabelecimento : Entity
         DataCricao = DateTime.Now;
         Ativo = true;
     }
+
+    public Estabelecimento Novo()
+    {
+        DataCricao = DateTime.Now;
+        Ativo = true;
+
+        return this;
+    }
 }

@@ -11,5 +11,16 @@ public class Atendente : Entity
     public Estabelecimento EstabelecimentoObj { get; set; }
 
     public double TempoAtendimentoMinimo { get; set; }
-    
+
+    #region Regras de Negócios
+
+    public Atendente Novo()
+    {
+        TempoAtendimentoMinimo = 5;
+        Ativo = true;
+
+        return this;
+    }
+
+    #endregion
 }
