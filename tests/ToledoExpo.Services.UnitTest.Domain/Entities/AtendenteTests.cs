@@ -1,8 +1,9 @@
 using ToledoExpo.Services.Domain.Entities;
+using Xunit;
 
-namespace ToledoExpo.Services.UnitTestDomain.Entities;
+namespace ToledoExpo.Services.UnitTest.Domain.Entities;
 
-public class AtendenteTest
+public class AtendenteTests
 {
 
     [Fact]

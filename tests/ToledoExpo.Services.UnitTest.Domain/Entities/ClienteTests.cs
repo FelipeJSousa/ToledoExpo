@@ -1,8 +1,9 @@
 ﻿using ToledoExpo.Services.Domain.Entities;
-//Resharper disable all
+using Xunit;
 
-namespace ToledoExpo.Services.UnitTestDomain.Entities;
-public class ClienteTest
+namespace ToledoExpo.Services.UnitTest.Domain.Entities;
+
+public class ClienteTests
 {
 
     [Fact(DisplayName = "Deve instanciar um cliente vazio")]
@@ -19,14 +20,14 @@ public class ClienteTest
     {
         var nome = "Gabriel Lanza";
         var capacidadeCognitiva = 2.50;
-        var velocidadeMovimento = 5;
+        var velocidadeMotora = 5;
          
-        var obj = new Cliente(nome, velocidadeMovimento, capacidadeCognitiva);
+        var obj = new Cliente(nome, velocidadeMotora, capacidadeCognitiva);
 
         Assert.NotNull(obj);
         Assert.Equal(nome, obj.Nome);
         Assert.Equal(capacidadeCognitiva, obj.CapacidadeCognitiva);
-        Assert.Equal(velocidadeMovimento, obj.VelocidadeMovimento);
+        Assert.Equal(velocidadeMotora, obj.VelocidadeMovimento);
     }
 
 }

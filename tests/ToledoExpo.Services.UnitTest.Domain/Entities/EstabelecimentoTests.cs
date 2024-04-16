@@ -1,9 +1,10 @@
 using System;
 using ToledoExpo.Services.Domain.Entities;
+using Xunit;
 
-namespace ToledoExpo.Services.UnitTestDomain.Entities;
+namespace ToledoExpo.Services.UnitTest.Domain.Entities;
 
-public class EstabelecimentoTest
+public class EstabelecimentoTests
 {
     [Fact(DisplayName = "Deve instanciar um estabelecimento vazio")]
     public void DeveInstanciarEstabelecimentoVazio()
