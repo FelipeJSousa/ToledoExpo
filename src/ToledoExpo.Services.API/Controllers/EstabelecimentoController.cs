@@ -21,8 +21,8 @@ public class EstabelecimentoController : ApiBaseController
     [Produces("application/json")]
     [Consumes("application/json")]
     [HttpPost]
-    public IActionResult ObterEstabelecimento()
+    public async Task<IActionResult> ObterEstabelecimento()
     {
-        return Response(_EstabelecimentoService.GetList());
+        return Response(await _EstabelecimentoService.GetList());
     }
 }
