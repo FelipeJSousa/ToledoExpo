@@ -5,6 +5,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="LinqKit" Version="1.2.5" />
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\ToledoExpo.Services.Domain\ToledoExpo.Services.Domain.csproj" />
       <ProjectReference Include="..\ToledoExpo.Services.Infraestructure\ToledoExpo.Services.Infraestructure.csproj" />
     </ItemGroup>
