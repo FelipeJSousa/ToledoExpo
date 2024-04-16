@@ -16,7 +16,7 @@ public interface IService
 public interface IService<TEntity> where TEntity : Entity
 {
 
-    public Task<TEntity> Save(TEntity obj, bool forced = false, bool ignoreQueryFilter = false);
+    public Task<TEntity> Save(TEntity obj, bool forced = false);
 
     public Task<TEntity> Delete(long id, bool forced = false);
 
@@ -34,7 +34,7 @@ public interface IService<TEntity> where TEntity : Entity
         Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
         Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null);
 
-    public Task<TEntity> SaveTransaction(TEntity obj, bool ignoreQueryFilter = false);
+    public Task<TEntity> SaveTransaction(TEntity obj);
 
     public Task<TEntity> DeleteTransaction(TEntity obj);
 

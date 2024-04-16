@@ -71,9 +71,9 @@ public abstract class ServiceBase<TEntity> : ServiceBase, IService<TEntity> wher
         _RepoBase = repoBase;
     }
 
-    public virtual async Task<TEntity> Save(TEntity obj, bool forced = false, bool ignoreQueryFilter = false)
+    public virtual async Task<TEntity> Save(TEntity obj, bool forced = false)
     {
-        var _retorno = await SaveTransaction(obj, ignoreQueryFilter);
+        var _retorno = await SaveTransaction(obj);
 
         await Commit(forced);
 
@@ -129,7 +129,7 @@ public abstract class ServiceBase<TEntity> : ServiceBase, IService<TEntity> wher
         return await Task.FromResult(_lista);
     }
 
-    public virtual async Task<TEntity> SaveTransaction(TEntity obj, bool ignoreQueryFilter = false)
+    public virtual async Task<TEntity> SaveTransaction(TEntity obj)
     {
         if (obj is null)
         {
@@ -138,7 +138,7 @@ public abstract class ServiceBase<TEntity> : ServiceBase, IService<TEntity> wher
         }
 
         if (obj.Id > 0)
-            obj = await Update(obj, ignoreQueryFilter);
+            obj = await Update(obj);
         else
             obj = await Add(obj);
 
@@ -166,7 +166,7 @@ public abstract class ServiceBase<TEntity> : ServiceBase, IService<TEntity> wher
         return await Task.FromResult(obj);
     }
 
-    protected virtual async Task<TEntity> Update(TEntity obj, bool ignoreQueryFilter = false)
+    protected virtual async Task<TEntity> Update(TEntity obj)
     {
         var _objExistente = await FindById(obj.Id);
         if (_objExistente == null)
