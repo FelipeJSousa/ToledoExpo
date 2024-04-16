@@ -9,7 +9,7 @@ public class EstabelecimentoController : ApiBaseController
 {
     private readonly IEstabelecimentoService _EstabelecimentoService;
     
-    public EstabelecimentoController(IEstabelecimentoService estabelecimentoService)
+    public EstabelecimentoController(ServiceProvider serviceProvider, IEstabelecimentoService estabelecimentoService) : base(serviceProvider)
     {
         _EstabelecimentoService = estabelecimentoService;
     }

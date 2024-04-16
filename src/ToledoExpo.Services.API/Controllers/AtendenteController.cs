@@ -6,7 +6,7 @@ namespace ToledoExpo.Services.API.Controllers;
 [Route("[controller]")]
 public class AtendenteController : ApiBaseController
 {
-    public AtendenteController()
+    public AtendenteController(IServiceProvider serviceProvider) : base(serviceProvider)
     {
         
     }

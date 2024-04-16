@@ -5,7 +5,9 @@ namespace ToledoExpo.Services.API.Controllers;
 
 public class AtendimentoController : ApiBaseController
 {
-    public AtendimentoController()
+    private readonly IAtendimentoService _AtendimentoService;
+    private readonly IClienteService _ClienteService;
+    public AtendimentoController(IServiceProvider serviceProvider, IAtendimentoService atendimentoService, IClienteService clienteService) : base(serviceProvider)
     {
         
     }
