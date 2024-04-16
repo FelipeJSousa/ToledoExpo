@@ -14,6 +14,7 @@ public static class RegisterApplicationServices
         services.AddScoped<IAtendenteService, AtendenteService>();
         services.AddScoped<IEstabelecimentoService, EstabelecimentoService>();
         services.AddScoped<IAtendimentoService, AtendimentoService>();
+        services.AddScoped<IClienteService, ClienteService>();
 
         return services;
     }
