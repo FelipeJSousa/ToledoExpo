@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using ToledoExpo.Services.API.ViewModels.Request;
+using ToledoExpo.Services.API.ViewModels.Response;
 using ToledoExpo.Services.Domain.Entities;
+using ToledoExpo.Services.Domain.Interfaces.Services;
 
 namespace ToledoExpo.Services.API.Controllers;
 
@@ -7,9 +10,11 @@ public class AtendimentoController : ApiBaseController
 {
     private readonly IAtendimentoService _AtendimentoService;
     private readonly IClienteService _ClienteService;
+    
     public AtendimentoController(IServiceProvider serviceProvider, IAtendimentoService atendimentoService, IClienteService clienteService) : base(serviceProvider)
     {
-        
+        _AtendimentoService = atendimentoService;
+        _ClienteService = clienteService;
     }
 
     /// <summary>
@@ -23,9 +28,9 @@ public class AtendimentoController : ApiBaseController
     {
         var _objCliente = await _ClienteService.Save(Mapear<Cliente>(request));
 
-        var _ret = await _AtendimentoService.AdicionarNafila(_objCliente, atendenteId);
+        var _ret = await _AtendimentoService.AdicionarNafila(_objCliente, request?.atendenteId ?? 0);
 
-        return Response(Mapear<ApiResponseNovoAtendimento>(_ret));
+        return Response(Mapear<ApiResponseAtendimento>(_ret));
     }
 
     /// <summary>
@@ -43,20 +48,6 @@ public class AtendimentoController : ApiBaseController
     }
     
     /// <summary>
-    ///     Obter atendimentos por situação.
-    /// </summary>
-    /// <returns></returns>
-    [Produces("application/json")]
-    [Consumes("application/json")]
-    [HttpGet]
-    public async Task<IActionResult> NovoCliente(AtendimentoSituacao request)
-    {
-        var _ret = await _AtendimentoService.GetList(x => x.Situacao == request);
-
-        return Response(Mapear<List<ApiResponseAtendimento>>(_ret));
-    }
-    
-    /// <summary>
     ///     Obter atendimentos por situação pendente.
     /// </summary>
     /// <returns></returns>
@@ -65,7 +56,7 @@ public class AtendimentoController : ApiBaseController
     [HttpGet("pendentes")]
     public async Task<IActionResult> AtendimentoPendente()
     {
-        var _ret = await _AtendimentoService.GetList(x => x.DataIncioAtendimento > DateTime.Now);
+        var _ret = await _AtendimentoService.ObterPendentes();
 
         return Response(Mapear<List<ApiResponseAtendimento>>(_ret));
     }
@@ -79,7 +70,7 @@ public class AtendimentoController : ApiBaseController
     [HttpGet("atendendo")]
     public async Task<IActionResult> EmAtendimento()
     {
-        var _ret = await _AtendimentoService.GetList(x => x.DataIncioAtendimento < DateTime.Now && x.DataFimAtendimento > DateTime.Now);
+        var _ret = await _AtendimentoService.GetList(x => x.DataInicioAtendimento < DateTime.Now && x.DataFimAtendimento > DateTime.Now);
 
         return Response(Mapear<List<ApiResponseAtendimento>>(_ret));
     }
@@ -91,7 +82,7 @@ public class AtendimentoController : ApiBaseController
     [Produces("application/json")]
     [Consumes("application/json")]
     [HttpGet("finalizado")]
-    public async Task<IActionResult> EmAtendimento()
+    public async Task<IActionResult> Finalizados()
     {
         var _ret = await _AtendimentoService.GetList(x => x.DataFimAtendimento < DateTime.Now);
 
