@@ -15,12 +15,30 @@ public class Atendimento : Entity
     
     public DateTime DataFimAtendimento { get; set; }
 
-
     #region Navigation Properties
 
     public Cliente ClienteObj { get; set; }
 
     public Atendente AtendenteObj { get; set; }
     
+    #endregion
+
+    #region Regras de Negócio
+
+    public AtendimentoSituacao ObterSituacao()
+    {
+        if (DataFimAtendimento < DateTime.Now)
+        {
+            return AtendimentoSituacao.Finalizado;
+        }
+        
+        if(DataInicioAtendimento < DateTime.Now && DataFimAtendimento > DateTime.Now)
+        {
+            return AtendimentoSituacao.Atendimento;
+        }
+        
+        return AtendimentoSituacao.Pendente;
+    }
+
     #endregion
 }
