@@ -23,7 +23,7 @@ public static class ServiceCollectionExtensions
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
 
-        services.AddDbContext<ToledoExpoContext>(options =>
+        services.AddDbContext<ToledoCWContext>(options =>
         {
             options.UseMySQL(configuration.GetConnectionString("DefaultConnection"));
         });

@@ -9,8 +9,8 @@ using ToledoExpo.Services.Infraestructure.Data.Contexts;
 
 namespace ToledoExpo.Services.Infraestructure.Migrations
 {
-    [DbContext(typeof(ToledoExpoContext))]
-    partial class ToledoExpoContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(ToledoCWContext))]
+    partial class ToledoCWContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

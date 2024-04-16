@@ -10,7 +10,7 @@ using ToledoExpo.Services.Infraestructure.Data.Contexts;
 
 namespace ToledoExpo.Services.Infraestructure.Migrations
 {
-    [DbContext(typeof(ToledoExpoContext))]
+    [DbContext(typeof(ToledoCWContext))]
     [Migration("20240413204630_Initial")]
     partial class Initial
     {

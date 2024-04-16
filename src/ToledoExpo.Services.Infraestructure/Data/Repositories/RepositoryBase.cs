@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using ToledoExpo.Services.Core.Entities;
 using ToledoExpo.Services.Core.Interfaces.Repositories;
+using ToledoExpo.Services.Infraestructure.Data.Contexts;
 
 namespace ToledoExpo.Services.Infraestructure.Data.Repositories;
 
@@ -15,7 +16,7 @@ public class Repository<T> : IRepository<T> where T : Entity
     protected readonly DbContext DbContext;
     protected readonly DbSet<T> DbSet;
 
-    public Repository(DbContext dbContext)
+    public Repository(ToledoCWContext dbContext)
     {
         DbContext = dbContext;
         DbSet = DbContext.Set<T>();
