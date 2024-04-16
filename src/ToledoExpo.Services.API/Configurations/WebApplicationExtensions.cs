@@ -2,7 +2,7 @@ namespace ToledoExpo.Services.API.Configurations;
 
 public static class WebApplicationExtensions
 {
-    public static async Task<WebApplication> UseWebApplication(this WebApplication app, IConfiguration configuration)
+    public static Task<WebApplication> UseWebApplication(this WebApplication app, IConfiguration configuration)
     {
         var env = app.Environment;
         
@@ -18,6 +18,6 @@ public static class WebApplicationExtensions
         
         app.UseHttpsRedirection();
         
-        return app;
+        return Task.FromResult(app);
     }
 }

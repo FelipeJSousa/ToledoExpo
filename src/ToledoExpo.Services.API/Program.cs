@@ -6,6 +6,6 @@ builder.Services.AddServices(builder.Configuration);
 
 var app = builder.Build();
 
-app.UseWebApplication(builder.Configuration);
+app?.UseWebApplication(builder.Configuration);
 
 app.Run();
