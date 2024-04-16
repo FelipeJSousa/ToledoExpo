@@ -44,5 +44,9 @@ public class AtendimentoService : ServiceBase<Atendimento>, IAtendimentoService
             predicate: x => x.DataInicioAtendimento > DateTime.Now, 
             orderBy: x => x.OrderByDescending(y => y.DataInicioAtendimento));
     }
-    
+
+    public Task<Atendimento> AdicionarNafila(Cliente objCliente, long atendenteId)
+    {
+        throw new NotImplementedException();
+    }
 }

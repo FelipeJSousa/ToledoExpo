@@ -13,4 +13,5 @@ public interface IAtendimentoService : IService<Atendimento>
 
     public Task<IEnumerable<Atendimento>> ObterPendentes();
 
+    Task<Atendimento> AdicionarNafila(Cliente objCliente, long atendenteId);
 }
