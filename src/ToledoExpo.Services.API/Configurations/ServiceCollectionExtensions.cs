@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ToledoExpo.Services.API.Configurations.Automapper;
 using ToledoExpo.Services.API.Configurations.IoC;
 using ToledoExpo.Services.Infraestructure.Data.Contexts;
 
@@ -29,6 +30,7 @@ public static class ServiceCollectionExtensions
         });
 
         services.RegisterServices();
+        services.AddAutoMapper(typeof(Program).Assembly);
         
         return services;
     }
